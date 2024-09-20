@@ -118,6 +118,7 @@ main{
 
 #media-container{
     display: flex;
+    overflow: hidden;
     align-items: center;
     flex-direction: column;
 }
