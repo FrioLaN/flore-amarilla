@@ -99,6 +99,7 @@ main{
 }
 
 #video-msj{
+    text-align: center;
     font-size: 30px;
     color: aliceblue;
     transition: all 3s ease-in-out;
