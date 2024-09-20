@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+span#amarilla{
+    color: yellow;
+}
+
+*::before *::after{
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #6a4a3c;
+}
+
+#loading.activate{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    height: 100vh; 
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+#loading.close{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    
+}
+
+#loading.close #loading-svg{
+    width: 0;
+    height: 0;
+}
+
+#loading #loading-svg{
+    width: 50px;
+    height: 50px;
+}
+
+#container{
+    display: flex;
+  justify-content: center;  /* Centra horizontalmente */
+  align-items: center;      /* Centra verticalmente */
+  height: 100vh;  
+}
+
+#container #form-activation #pressme{
+    padding: 13px;
+    border-radius: 10px;
+    border-bottom: #eb6841;
+    border: 1px solid aliceblue;
+    background-color: #eb6841;
+    text-align: center;
+    color: aliceblue;
+    cursor: pointer;
+    transition: all 350ms;
+    box-shadow: 6px 8px 8px 1px rgba(0,0,0,0.5);
+}
+
+#container #form-activation{
+    overflow: hidden;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms;
+}
+
+#container #form-activation #pressme:hover{
+    border-bottom: aliceblue;
+    border: 1px solid #eb6841;
+    color: #eb6841;
+    background-color: aliceblue;
+}
+#container #form-activation.bye{
+    width: 0px;
+    height: 0px;
+}
+
+#container #form-activation #pressme.click{
+    box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+#video-msj.close{
+    font-size: 0px;
+    transition: all 3s ease-in-out;
+}
+
+#video-msj{
+    font-size: 30px;
+    color: aliceblue;
+    transition: all 3s ease-in-out;
+}
+
+#video.close{
+    width: 0px;
+    height: 0px;
+    transition: all 3s ease-in-out;
+}
+
+#video{
+    width: 300px;
+    height: 300px;
+    transition: all 3s ease-in-out;
+}
+
+#media-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
